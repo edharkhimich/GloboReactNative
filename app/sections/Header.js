@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 
 export class Header extends React.Component {
     
@@ -19,6 +19,10 @@ export class Header extends React.Component {
 
         return (
             <View style={styles.headStyle}>
+                <Image
+                    style={styles.logoStyle}
+                    source={require('./img/it_logo.png')}
+                />
                 <Text
                     style={styles.headText}
                     onPress={this.toggleUser}>{display}
@@ -32,12 +36,22 @@ const styles = StyleSheet.create({
     headText: {
         textAlign: 'right',
         color: '#ffffff',
-        fontSize: 20
+        fontSize: 20,
+        flex: 1
     },
     headStyle: {
-        paddingTop: 50, 
-        paddingBottom: 10,
+        paddingTop: 30, 
+        paddingBottom: 5,
         paddingRight: 10,
-        backgroundColor: '#35605a'
+        backgroundColor: '#35605a',
+        flex: 1,
+        flexDirection: 'row',
+        borderBottomWidth: 2,
+        borderColor: '#000000'
+    },
+    logoStyle: {
+        flex: 1,
+        width: undefined,
+        height: undefined,
     }
 })
