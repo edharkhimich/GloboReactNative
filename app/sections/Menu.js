@@ -12,7 +12,7 @@ export class Menu extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.buttonRow}>
-                    <TouchableOpacity style={ styles.buttonStyles} onPress={this.onPress}>
+                    <TouchableOpacity style={ styles.buttonStyles} onPress={() => this.props.navigate('LessonsRT')}>
                         <Text style={styles.buttonText}>LESSONS</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={ styles.buttonStyles} onPress={this.onPress}>
@@ -25,7 +25,7 @@ export class Menu extends React.Component {
                         <Text style={styles.buttonText}>BLOG</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonStyles} onPress={this.onPress}>
+                    <TouchableOpacity style={styles.buttonStyles} onPress={() => this.props.navigate('ContactRT')}>
                         <Text style={styles.buttonText}>CONTACT</Text>
                     </TouchableOpacity>
                 </View>
@@ -43,7 +43,6 @@ export class Menu extends React.Component {
         )
     }
 }
-
 
 
 const styles = StyleSheet.create({
