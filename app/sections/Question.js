@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, Text, View, TouchablHighlight} from 'react-native'
+import {StyleSheet, Text, View, TouchableHighlight} from 'react-native'
 
 export class Question extends React.Component {
     static navigationOptions = {
@@ -54,7 +54,6 @@ export class Question extends React.Component {
                     <Text style={styles.answerText}>{this.props.answer4}</Text>
                 </TouchableHighlight>
 
-
                     </View>
                 )}
 
@@ -80,7 +79,6 @@ export class Question extends React.Component {
                     </View>
                 )}
             </View>
-
         )
     }
 }

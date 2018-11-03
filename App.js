@@ -6,6 +6,8 @@ import { Video } from './app/views/Video.js'
 import { VideoDetail } from './app/views/VideoDetail.js'
 import { Registration } from './app/views/Registration.js'
 import { Login } from './app/views/Login.js'
+import { Quiz } from './app/views/Quiz.js'
+import { Finish } from './app/views/QuizFinish.js'
 
 const MyRoutes = StackNavigator({
   HomeRT: {
@@ -25,6 +27,12 @@ const MyRoutes = StackNavigator({
   },
   LoginRT: {
     screen: Login
+  },
+  QuizRT: {
+    screen: Quiz
+  },
+  FinishRT: {
+    screen: Finish
   }
 }, 
   {

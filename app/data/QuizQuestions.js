@@ -15,8 +15,8 @@ export const QuizData ={
             answer1: 'string',
             answer2: 'array',
             answer3: 'number',
-            number4: 'boolean',
-            correctAnswer: 'answer2'
+            answer4: 'boolean',
+            correctAnswer: 'answer2',
             key: '1B'
         },
         {
