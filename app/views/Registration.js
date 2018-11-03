@@ -25,7 +25,7 @@ export class Registration extends React.Component {
 
     cancelRegister = () => {
         Alert.alert('Registration cancelled')
-        this.state.navigation.navigate('HomeRT')
+        this.props.navigation.navigate('HomeRT')
     }
 
     registerAccount = () => {
