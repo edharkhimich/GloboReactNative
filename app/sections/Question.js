@@ -6,7 +6,6 @@ export class Question extends React.Component {
         header: null
     }
 
-
     constructor (props){
         super(props)
         this.state = {
