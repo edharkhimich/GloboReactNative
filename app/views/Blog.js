@@ -26,7 +26,7 @@ export class Blog extends React.Component {
     }
 
     chooseBlog = (blogId) => {
-        console.log(`Blog ID chosen: ${blogId}`)
+        this.props.navigation.navigate('BlogDetailRT', {blogId: blogId})
     }
 
 
@@ -68,9 +68,10 @@ export class BlogItem extends React.Component {
 
     render(){
         let blogItems = `
-        <a href=${this.props.id} style="textDecorationLine: none; color: #000000, textAlign: center"></a>
+        <a href=${this.props.id} style="textDecorationLine: none; color: #000000, textAlign: center">
         <img src=${this.props.imageSrc}
         <h1>${this.props.title}</h1>
+        </a>
         `
 
         return(
